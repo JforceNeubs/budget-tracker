@@ -23,7 +23,7 @@
 <p class="p1"><span class="s1">&lt;body&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Budget Tracker&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Balance: £{{ balance }}&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Balance: &amp;pound;{{ balance }}&lt;/h2&gt;</span></p>
 <p class="p2"><span class="s1"></span><br></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;form method="POST" action="/add"&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;input type="text" name="name" placeholder="Description" required&gt;</span></p>
@@ -34,7 +34,7 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul class="transactions"&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{% for t in transactions %}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li class="{% if t.amount &gt;= 0 %}income{% else %}expense{% endif %}"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{{ t.name }}: £{{ t.amount }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{{ t.name }}: &amp;pound;{{ t.amount }}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/li&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{% endfor %}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
