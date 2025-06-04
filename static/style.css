@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+}
+
+.transactions {
+    list-style-type: none;
+    padding: 0;
+}
+
+.income {
+    color: green;
+}
+
+.expense {
+    color: red;
+}
